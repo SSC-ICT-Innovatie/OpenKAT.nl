@@ -1,0 +1,14 @@
+.news {
+	> div {
+		padding: 3rem 2rem;
+		gap: 2rem;
+	}
+
+	p {
+		margin: 1.5rem 0 ;
+	}
+
+	h3 {
+		margin: 0;
+	}
+}

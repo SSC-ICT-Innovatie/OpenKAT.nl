@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kwetsbaarheden Analyse Tool, openkat.nl.">
+    <title>OpenKAT Kwetsbaarheden Analyse Tool, welkom bij openkat.nl.</title>
+    <link rel="stylesheet" href="/css/manon.kat.min.css?1">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="icon" href="/cat.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://openkat.nl/" />
+  </head>
+  <body>
+    <header>
+      <a href="#main-content" class="button focus-only">Ga direct naar inhoud</a>
+
+    <nav data-open-label="Menu" aria-label="Hoofdnavigatie" id="main-nav" class="collapsible">
+    <div class="collapsing-element">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="nieuws.html" aria-current="page">Nieuwsberichten</a></li>
+          <li><a href="meedoen.html">Meedoen</a></li>
+          <li><a href="openkatdag.html">OpenKAT dag</a></li>
+      </ul>
+    </div>
+    </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section class="hero">
+        <div class="image-background">
+          <img src="/keiko-hero.jpg" alt="" />
+        </div>
+      </section>
+
+      <section class="condensed">
+        <div class="content-wrapper">
+          <h1 class="page-title">Nieuwsberichten</h1>
+          <div class="news">
+            <div class="background-color-offset" id="dec-2025">
+              <div>
+                <h3 class="heading-large">VWS stopt met OpenKAT, maar applicatie blijft beschikbaar</h3>
+                <h4 class="de-emphasized">December 2025</h4>
+              </div>
+              
+              <p class="emphasized">
+                  Het ministerie van VWS stopt per 1 januari 2026 met het beheer, 
+                  onderhoud en doorontwikkeling van de Open Source Kwetsbaarheden Analyse Tool, kortweg OpenKAT. 
+                  De applicatie blijft open source beschikbaar – VWS laat OpenKAT over aan de community, 
+                  markt en samenleving.
+              </p>
+
+              <p>
+                  Om dit te mogelijk te maken draagt VWS het eigenaarschap van de GitHub-repository – 
+                  de online plek waar de broncode van de applicatie staat – over aan SSC-ICT Innovatie (ministerie van BZK),
+                  een van de ICT-dienstverleners van de rijksoverheid.
+              </p>
+              
+              <h4>Wat is OpenKAT?</h4>
+              <p>
+                VWS (afdeling iRealisatie) ontwikkelde OpenKAT in de coronajaren. De applicatie scant en analyseert netwerk- 
+                en informatiesystemen en detecteert kwetsbaarheden, en helpt zo om beveiligingsincidenten te voorkomen. 
+                Daarnaast ondersteunt de applicatie organisaties om te voldoen aan de Europese Network and Information 
+                Security Directive (NIS2-richtlijn) en de Cyberbeveiligingswet, de nationale omzetting van die richtlijn. 
+                Deze wetgeving moet de digitale weerbaarheid van kritieke processen, zoals de zorg, versterken.
+                Hoewel OpenKAT aanvankelijk werd ontwikkeld voor netwerk- en informatiesystemen in de zorgsector, is het 
+                inmiddels uitgegroeid tot een breed inzetbare applicatie die waarde toevoegt voor (rijks)overheden, 
+                (semi-)publieke organisaties en private partijen.
+              </p>
+
+              <h4>Waarom VWS stopt met beheer</h4>
+              <p>
+                Het scannen en monitoren van de corona-apps en test- en vaccinatiestraten is niet langer nodig. 
+                Daarnaast horen beheer, onderhoud en doorontwikkeling van opensource-software niet bij de kerntaken van VWS. 
+                Daarom heeft VWS besloten om hier voor OpenKAT per 1 januari 2026 mee te stoppen en de opensource software 
+                aan de community, markt en samenleving over te laten.
+              </p>
+              
+              <h4>Toekomst OpenKAT</h4>
+              <p>
+                Door het beheer van de broncode onder te brengen bij SSC-ICT Innovatie, legt VWS de basis voor een 
+                toekomstbestendige en breed gedragen inzet van OpenKAT als opensource-oplossing voor digitale weerbaarheid 
+                en cybersecurity binnen een breed scala aan publieke en private organisaties.
+
+              </p>
+            </div>
+            
+            <div id="1.20">
+              <div>
+                <h3 class="heading-large">OpenKAT v1.20 uitgebracht</h3>
+                <h4 class="de-emphasized">Augustus 2025</h4>
+                <a name="1.20"></a>
+              </div>
+              <p class="emphasized">
+                OpenKAT <a href="https://github.com/minvws/nl-kat-coordination/releases/v1.20.0" rel="external">v1.20</a> 
+                is uitgebracht. In deze release is deduplicatie van boefje taken toegevoegd. Dat betekent dat wanneer 
+                hetzelfde object zich in meerdere organisaties bevindt, het boefje maar één keer wordt gedraait en de 
+                uitvoer gebruikt wordt in iedere organisatie.
+                </p>
+                
+              <p>
+                Wanneer er meerdere gebruikers zijn van meerdere organisaties 
+                kan het zijn dat een gebruiker uit de deduplicatie kan concluderen dat een object zich ook in een andere 
+                organisatie in dezelfde installatie bevindt. Dat kan niet wenselijk zijn en daarom staat dit standaard uit 
+                en kan aan gezet worden met de BOEFJES_DEDUPLICATE omgevingsvariabele.
+              </p>
+              <p>
+                In deze release is de containerization van alle boefjes afgerond: alle boefjes worden nu als containers 
+                gesandboxed gedraaid. Asset reports zijn optioneel gemaakt en kunnen worden disabled met de setting ASSET_REPORTS. Dit wordt 
+                geadviseerd wanneer er rapporten worden gemaakt over een groot aantal objecten.
+              </p>
+              <p>
+                Bekijk de <a href="https://docs.openkat.nl/about-openkat/release-notes/1.20.html">uitgebreide release notes</a> voor meer informatie. Heb je tijdens het testen vragen of opmerkingen neem dan contact op via <a href="mailto:meedoen@openkat.nl">meedoen@openkat.nl</a>.
+              </p>
+            </div>
+
+            <div class="background-color-offset" id="nieuwetoekomst">
+              <div>
+                <h3 class="heading-large">OpenKAT zoekt een nieuwe toekomst — samen met de community</h3>
+                <h4 class="de-emphasized">Juli 2025</h4>
+              </div>
+              <p class="emphasized">
+                Per 1 juli 2025 zet het ministerie van Volksgezondheid, Welzijn en Sport (VWS) volledig in op het 
+                versterken van de OpenKAT community, het ondersteunen van huidige gebruikers van de software en het 
+                uitbreiden van het deelnemersveld.
+              </p>
+              
+              <p>
+                Daarnaast zoeken we actief naar een nieuwe, duurzame governancestructuur 
+                met een vaste landingsplek voor de tooling. Hiermee krijgt de community een cruciale rol in het verder 
+                ontwikkelen, verbeteren en duurzaam borgen van OpenKAT.
+              </p>
+
+              <p>
+                We streven ernaar deze nieuwe structuur voor het einde van het jaar te realiseren. Zo blijft OpenKAT beheerd, doorontwikkeld en inzetbaar, en daarmee ook op de lange termijn beschikbaar en relevant.
+              </p>
+
+                <h4>Wat betekent dit voor OpenKAT?</h4>
+                <p>Per 1 juli 2025 stopt VWS met de financiering van de doorontwikkeling van OpenKAT. Een kleiner team gaat, in opdracht van Z-CERT en in samenwerking met VWS, door met de ontwikkeling van OpenKAT. Tot het einde van dit jaar:
+                  <ul>
+                    <li>blijft VWS verantwoordelijk voor het uitvoeren van bugfixes en security-updates, zodat huidige gebruikers veilig met de software kunnen blijven werken;</li>
+                    <li>werkt VWS aan het vinden van een passende, toekomstbestendige beheerorganisatie voor de tooling en de ondersteuning van gebruikers.</li>
+                  </ul>  
+                </p>
+  
+                <p>OpenKAT blijft uiteraard open source en vrij beschikbaar. De kracht van OpenKAT zit in het open karakter en de gedeelde verantwoordelijkheid: de community bouwt mee aan het product bijvoorbeeld door te coderen, testen, vertalen en documenteren. De toekomst van OpenKAT ligt vanaf nu grotendeels in handen van de gebruikers en de community. Veel van hen hebben al aangegeven door te gaan, of zelfs een actievere rol te willen nemen in deze nieuwe fase.</p>
+  
+                <h4>Toekomst OpenKAT</h4>
+                <p>Het streven is om begin 2026 een nieuwe landingsplek te hebben gevonden, waar het beheer, het gebruikersondersteuningsmodel en de verdere ontwikkeling van OpenKAT duurzaam worden ondergebracht. VWS zal deze transitie zo goed mogelijk begeleiden. Voor overheidsorganisaties is er bovendien tot het einde van dit jaar ruimte voor een Proof of Concept (POC), om OpenKAT binnen de eigen omgeving te testen. </p>
+  
+                <p>Geïnteresseerd? Neem dan contact met ons op per <a href="mailto:meedoen@openkat.nl">e-mail</a>.</p>
+  
+                <h4>Digitale veiligheid</h4>
+                <p>Digitale veiligheid vraagt om transparantie, samenwerking en open source software. OpenKAT biedt hiervoor een goede basis, maar alleen samen kunnen we er het meeste uithalen. We nodigen dan ook iedereen uit om betrokken te blijven, mee te denken en samen te werken aan een veilige digitale overheid.</p>
+                
+                <p>Onze dank gaat uit naar iedereen die zich de afgelopen jaren heeft ingezet voor OpenKAT. We hopen velen van jullie ook in deze volgende fase weer tegen te komen!</p>
+                <p>
+                📬	<a href="mailto:meedoen@openkat.nl">meedoen@openkat.nl</a><br>
+                💬	<a href="https://signal.group/#CjQKIIS4T1mDK1RcTqelkv-vDvnzrsU4b2qGj3xIPPrqWO8HEhDISi92dF_m4g7tXEB_QwN_" rel="external">Signal-groep</a><br>
+                🧑‍💻	<a href="https://github.com/minvws/nl-kat-coordination" rel="external">GitHub</a>
+              </p>
+            </div>
+
+            <div id="1.19">
+              <div>
+                <h3 class="heading-large">OpenKAT v1.19 uitgebracht</h3>
+                <h4 class="de-emphasized">Juni 2025</h4>
+              </div>
+              <p class="emphasized">
+                OpenKAT <a href="https://github.com/minvws/nl-kat-coordination/releases/v1.19.0" rel="external">v1.19</a> is uitgebracht, deze release voegt dashboards toe op basis van reports en object lists. Ook aan performance en schaalbaarheid is gedacht en natuurlijk vele andere changes.
+              </p>
+              <p>
+                Bekijk de <a href="https://docs.openkat.nl/about-openkat/release-notes/1.19.html">uitgebreide release notes</a> voor meer informatie. Heb je tijdens het testen vragen of opmerkingen neem dan contact op via <a href="mailto:meedoen@openkat.nl">meedoen@openkat.nl</a>.
+              </p>
+            </div>
+            
+            <div class="background-color-offset" id="1.18">
+              <div>
+                <h3 class="heading-large">OpenKAT v1.18 uitgebracht - Sneeuwkat</h3>
+                <h4 class="de-emphasized"> Maart 2025 </h4>
+              </div>
+
+              <p class="emphasized">
+                OpenKAT <a href="https://github.com/minvws/nl-kat-coordination/releases/v1.18.0" rel="external">v1.18</a> is 
+                uitgebracht, deze release voegt rapport planning toe: wanneer een interval aan een rapport wordt toegevoegd, 
+                wordt deze automatisch geupdate met de meest recente informatie. Met de nieuwe dashboard functies kunnen deze 
+                rapporten worden toegevoegd aan custom dashboards. 
+              </p>
+
+              <p>
+                Dashboard en Rapportage data bevatten nu ook de historische versie als stap naar de uiteindelijke interface 
+                functionaliteit om terug en verder te kunnen gaan en de historische versies te kunnen vergelijken op 
+                veranderingen en trends.
+              </p>
+
+              <p>
+                Verder in deze release een nieuw HTTP export boefje om alle objecten te exporteren naar een extern API.
+              </p>
+
+              <p>
+                Ook, met dank aan de groeiende community, een nieuwe S3 backend voor Bytes en verschillende nieuwe boefjes, 
+                normalizeres en bugixes. En nog veel meer te lezen in de releasenotes.
+              </p>
+                
+                <p>In totaal hebben 30 contributors 267 commits to Main gemaakt waarin 1.332 files zijn aangepast.</p>
+            </p>
+              <p>
+                Bekijk de <a href="https://docs.openkat.nl/about-openkat/release-notes/1.18.html">uitgebreide release notes</a> voor meer informatie. Heb je tijdens het testen vragen of opmerkingen neem dan contact op via meedoen@openkat.nl.
+              </p>
+            </div>
+
+            <div id="1.17">
+              <div>
+                <h3 class="heading-large">OpenKAT v1.17 uitgebracht</h3>
+                <h4 class="de-emphasized"> 3 Oktober 2024</h4>
+                <a name="1.17"></a>
+              </div>
+
+              <p class="emphasized">
+                OpenKAT <a href="https://github.com/minvws/nl-kat-coordination/releases/v1.17.0" rel="external">v1.17</a> 
+                is uitgebracht, deze release heeft flexibele scheduling toegevoegd voor het plannen van periodieke rapporten
+                naast het runnen van Boefjes op custom intervallen.
+              </p>
+                 
+              <p>
+                We hebben gestructureerde JSON logging toegevoegd 
+                en audit trails ten behoeve van logging en monitoring. Verder is toegevoegd het zoeken en sorteren van 
+                object lists en een cross-organisatie takenlijst voor gebruikers met meerder organisaties. 
+                Ook zijn we gemigreerd naar Django 5 en zijn verschillende afhankelijkheden ge-upgrade ten behoeve 
+                van de laatste security updates.
+              </p>
+              <p>
+                Bekijk de <a href="https://docs.openkat.nl/about-openkat/release-notes/1.17.html">uitgebreide release notes</a> voor meer informatie. Heb je tijdens het testen vragen of opmerkingen neem dan contact op via meedoen@openkat.nl.
+              </p>
+            </div>
+
+            <div class="background-color-offset" id="1.16">
+              <div>
+                <h3 class="heading-large">OpenKAT v1.16 uitgebracht</h3>
+                <h4 class="de-emphasized"> 13 Augustus 2024</h4>
+                <a name="1.16"></a>
+              </div>
+              <p class="emphasized">
+                OpenKAT <a href="https://github.com/minvws/nl-kat-coordination/releases/v1.16.0" rel="external">v1.16</a> 
+                is uitgebracht, met deze release kunnen rapportages opgeslagen worden en op elk gewenst moment weer 
+                ingezien worden. Een grote stap richting “plannen van automatisch gegenereerde rapportages”.
+              </p>
+              <p>
+                Ook in deze release weer meer rapportage functionaliteit en bugfixes. Verder een grote stap gemaakt 
+                richting de functionaliteit om custom boefjes toe te voegen.
+              </p>
+              <p>
+                Bekijk de <a href="https://docs.openkat.nl/about-openkat/release-notes/1.16.html">uitgebreide release notes</a> voor meer informatie. Heb je tijdens het testen vragen of opmerkingen neem dan contact op via meedoen@openkat.nl.
+              </p>
+            </div>
+
+            <div id="april-2024">
+              <div>
+                <h3 class="heading-large">OpenKAT v1.15 uitgebracht</h3>
+                <h4> 15 April 2024</h4>
+              </div>
+              <p class="emphasized">
+                OpenKAT <a href="https://github.com/minvws/nl-kat-coordination/releases/v1.15.0" rel="external">v1.15</a> is
+                uitgebracht, deze release bevat een groot aantal optimalisaties in de nieuwe rapportage functionaliteit die 
+                in release 1.14 is geïntroduceerd. Metingen hebben aangetoond dat hiermee het genereren van een rapport over
+                100 objecten hiermee circa 20 keer sneller is. Daarbij is er ook nieuwe functionaliteit doorgevoerd.
+              </p>
+              <p>
+                Bekijk de <a href="https://docs.openkat.nl/about-openkat/release-notes/1.15.html">uitgebreide release notes</a> voor meer informatie. Heb je tijdens het testen vragen of opmerkingen neem dan contact op via meedoen@openkat.nl.
+              </p>
+            </div>
+
+            <div class="background-color-offset" id="31-dec-2023">
+              <div>
+                <h3 class="heading-large">OpenKAT v1.14 uitgebracht</h3>
+                <h4 class="de-emphasized"> 31 December 2023</h4>
+              </div>
+              <p class="emphasized">
+                OpenKAT <a href="https://github.com/minvws/nl-kat-coordination/releases/v1.14.0" rel="external">v1.14</a> is uitgebracht, deze release bevat onze veel flexibelere en krachtigere reporting-engine met daarin een groot aantal nieuwe report-types, en allerlei aanpassingen om deze reports te kunnen vullen met de nodige data.
+              </p>
+              <p>
+                Bekijk de <a href="https://docs.openkat.nl/about-openkat/release-notes/1.14.html">uitgebreide release notes</a> voor meer informatie. Heb je tijdens het testen vragen of opmerkingen neem dan contact op via meedoen@openkat.nl.
+              </p>
+            </div>
+
+            <div id="15-dec-2023">
+              <div>
+                <h3 class="heading-large">OpenKAT v1.13 uitgebracht</h3>
+                <h4 class="de-emphasized">15 December 2023</h4>
+              </div>
+              <p class="emphasized">
+                OpenKAT <a href="https://github.com/minvws/nl-kat-coordination/releases/v1.13.0" rel="external">v1.13</a> is uitgebracht, deze release brengt oa een sneak preview van onze veel flexibelere en krachtigere reporting-engine. Deze feature is verborgen achter een feature flag welke u zelf kunt aanzetten om er van te proeven.
+              </p>
+              <p>
+                Bekijk de <a href="https://docs.openkat.nl/about-openkat/release-notes/1.13.html">uitgebreide release notes</a> voor meer informatie. Heb je tijdens het testen vragen of opmerkingen neem dan contact op via meedoen@openkat.nl.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer>
+      <div class="content-wrapper">
+        <div class="meta">
+          <p>
+          </p>
+        </div>
+        <nav aria-label="Footernavigatie">
+          <ul>
+            <li><a href="/index.html">OpenKAT</a></li>
+            <li><a href="/#what">Wat?</a></li>
+            <li><a href="/#join" >Meedoen?</a></li>
+            <li><a href="/privacy_statement.html">Privacy Statement</a></li>
+            <li>
+              <a href="/toegankelijkheidsverklaring.html"
+                >Toegankelijkheidsverklaring</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+/* Background color offset */
+section.background-color-offset {
+	&:last-child {
+		margin-bottom: -4rem;
+	}
+}
+
+section:last-child.background-color-offset {
+	margin-bottom: 0;
+}
+
+.tiles > div {
+	display: flex;
+	
+	> a:last-child {
+		margin-top: auto;
+		align-self: flex-end;
+		text-decoration: none;
+	}
+}
+
+body > footer {
+	nav {
+		width: auto;
+	}
+}
